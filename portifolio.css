@@ -1,0 +1,228 @@
+body{
+    background-image: url(../Portif-lio/imgs/backgroundPortifolio.png);
+    background-size: 100%;
+}
+html{
+  scroll-behavior: smooth;
+}
+
+
+::-webkit-scrollbar{
+  width: 15px;
+}
+::-webkit-scrollbar-track{
+  background: #f2e9e4;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb{
+  background: #22223B;
+  border-radius: 20px;
+}
+/*configurações fonte navbar*/
+.navbar-nav{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    color: white;
+}
+.nav-item{
+    margin-right: 20px;
+}
+/* animação items navbar*/
+.nav-item{
+    transition: transform 1s;
+    transform: translateX(0.3) scale(0.3); 
+}
+.nav-item:hover, .nav-item:focus{
+    transform: translateX(1px) scale(1.1);
+}
+#navSec:hover{
+  color: #c9ada7;
+}
+/*animação da logo*/
+#logoPortifolio{
+    transition: transform 1s;
+  transform: translateX(0.5) scale(0.5);
+}
+#logoPortifolio:hover,
+#logoPortifolio:focus {
+  transform: translateX(10px) scale(1.1);
+}
+
+/*propriedades box inicio*/
+.box1{
+    width: 100%;
+    height: 500px;
+    background-color: #22223B;
+    padding-top: 50px;
+    border-radius: 15px 40px 15px 40px;
+    box-shadow: 50px -18px #4a4e69;
+    border: solid 2px;
+    border-color: #4A4E69;
+   
+}
+/*texto box inicio*/
+#textoInicio{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: lighter;
+    font-size: 30px;
+    color:#c9ada7;
+    padding-left: 30px;
+    display: inline-block;
+  margin: 0 0.1rem;
+
+  animation:zoomIn; 
+  animation-duration: 1.5s;
+}
+#imgDevWeb{
+  display: inline-block;
+  margin: 0 0.1rem;
+
+  animation:fadeInRight; 
+  animation-duration: 1.5s;
+}
+
+  #quemSouEuPort{
+      font-family:'Montserrat', sans-serif;
+      color:#f2e9e4;
+      font-size: 50px;
+      text-align: left;
+  }
+  #textoQuemSouEu{
+      font-family:'Montserrat', sans-serif;
+      color: #c9ada7;
+      font-size: 20px;
+      text-align: justify;
+      margin-top: 30px;
+  }
+#imgSobreMim{
+  transform: translateY(-5px);
+  animation: flot 3s ease infinite;
+}
+@keyframes flot{
+  0%{
+    transform: translateY(-5px);
+  }
+  50%{
+    transform: translateY(-25px);
+  }
+}
+  .box2{
+      background-color:#4a4e69;
+    padding-top: 40px;
+  }
+.box4{
+  background-color: #4a4e69;
+  width: 100%;
+  height: 100%;
+}
+  #habilidades{
+    font-family:'Montserrat', sans-serif;
+    color:#f2e9e4;
+    font-size: 50px; 
+    padding-left: 18px;
+    padding-top: 70px;
+  }
+  #iconesHabilidades{
+      margin-left: 30px;
+      margin-top: 40px;
+      margin-bottom: 40px;
+  }
+  #iconsProg{
+      margin-right: 20px;
+      margin-bottom: 30px;
+      border:inset 10px white;
+      background-color: #22223B;
+      border-radius: 12%;
+      padding: 10px;
+      height: 150px;
+      width: 180px;
+  }
+#iconsProg:hover{
+  transition: 0.5s;
+    transform: scale(1.18, 1.18);
+}
+.gitHubIcon{
+  margin-right: 30px;
+}
+#projetos{
+  
+  border: outset 10px #f2e9e4;
+  border-radius: 40px;
+  height: 250px;
+  width: 350px;
+  background-color: #22223B;
+  overflow: hidden;
+  box-shadow: 10px 10px 0px #22223B;
+
+}
+
+#embrevetexto:hover, #embrevetexto3:hover{
+  transform: scale(1.05, 1.05);
+  transition: 1s;
+  transition-property: all;
+}
+#embrevetexto{
+  background-color: #4A4E69;
+  transform: rotate(-45deg);
+  padding: 5px;
+  margin-left: -80px;
+  padding-left: 137px;
+  padding-right: 137px;
+ position: absolute;
+
+}
+#embrevetexto3{
+  background-color: #4A4E69;
+  transform: rotate(-45deg);
+  padding: 5px;
+  margin-left: -80px;
+  padding-left: 135px;
+  padding-right: 134px;
+ position: absolute;
+}
+#botaoMaisProjetos, #botaoMenosProjetos{
+  border-radius: 30px;
+  background: transparent;
+  border: 5px solid #c9ada7;
+  cursor: pointer;
+  position: relative;
+}
+#botaoMaisProjetos:hover, #botaoMenosProjetos:hover{
+  background: #22223B;
+}
+#iconsContatos{
+width:120px ; 
+margin-right: 20px;
+margin-left: 10px;
+padding-left: 10px;
+padding-bottom: 40px;
+}
+#iconsContatos:hover{
+  display: inline-block;
+  
+
+  animation: heartBeat;
+  animation-duration: 1.5s; 
+}
+
+#rodape{
+  background-color: #22223B;
+}
+
+
+#textoInicio::after {
+  content: '|';
+  opacity: 1;
+  margin-left: 5px;
+  display: inline-block;
+  animation: blink .7s infinite;
+}
+
+@keyframes blink {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
