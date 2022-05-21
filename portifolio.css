@@ -66,12 +66,25 @@ html{
     font-weight: lighter;
     font-size: 30px;
     color:#c9ada7;
-    padding-left: 30px;
-    display: inline-block;
-  margin: 0 0.1rem;
-
-  animation:zoomIn; 
-  animation-duration: 1.5s;
+    padding-left: 80px;
+}
+.digitacao{
+  width: 100%;
+  animation: digitacao 6s steps(40),
+  cursor .4s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 1px solid;
+}
+@keyframes digitacao{
+  from{
+    width: 0;
+  }
+}
+@keyframes cursor{
+  50%{
+    border-color: transparent;
+  }
 }
 #imgDevWeb{
   display: inline-block;
@@ -210,19 +223,3 @@ padding-bottom: 40px;
 }
 
 
-#textoInicio::after {
-  content: '|';
-  opacity: 1;
-  margin-left: 5px;
-  display: inline-block;
-  animation: blink .7s infinite;
-}
-
-@keyframes blink {
-  0%, 100% {
-    opacity: 1;
-  }
-  50% {
-    opacity: 0;
-  }
-}
